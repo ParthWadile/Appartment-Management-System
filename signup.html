@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign&login.css">
+    <title>Login-Form</title>
+</head>
+
+<body>
+    <div class="sign-up">
+        <h1>Sign Up</h1>
+        <form action="signup.php" method="POST">
+            <label>First Name</label>
+            <input type="text" name="FirstName" required>
+            <label>Last Name</label>
+            <input type="text" name="LastName" required>
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Gender</label>
+            <div class="gender-option">
+                <input type="radio" name="gender" id="male" value="male" name="gender" required>
+                <label>Male</label>
+                <input type="radio" name="gender" id="female" value="female" name="gender" required>
+                <label>female</label>
+            </div>
+            <label>Password</label>
+            <input type="password" name="password" required>
+            <label>Confirm Password </label>
+            <input type="password" name="password" required>
+            <input type="submit" value="Submit">
+        </form>
+        <label>
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+            I agree to the <a href="terms&cond.html" target="_blank">Terms and Conditions<br></a>and <a href="pp.html"
+                target="_blank">Privacy Policy</a>.
+        </label>
+    </div>
+    <p class="login-in">Already have an account <a href="login.html"><br>Login here</a></p>
+</body>
+
+</html>

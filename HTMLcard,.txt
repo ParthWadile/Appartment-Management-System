@@ -1,0 +1,176 @@
+HTML:-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text with Card Layout</title>
+</head>
+<body>
+    <!-- Card Section -->
+    <section class="card-section">
+        <div class="card">
+            <div class="card-image">
+                <img src="image1.jpg" alt="Card Image">
+            </div>
+            <div class="card-content">
+                <h3>Card Title</h3>
+                <p>This is a sample description for the card. You can add more details here to describe the content of the card.</p>
+                <a href="#" class="card-btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="image2.jpg" alt="Card Image">
+            </div>
+            <div class="card-content">
+                <h3>Card Title</h3>
+                <p>This is a sample description for the card. You can add more details here to describe the content of the card.</p>
+                <a href="#" class="card-btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="image3.jpg" alt="Card Image">
+            </div>
+            <div class="card-content">
+                <h3>Card Title</h3>
+                <p>This is a sample description for the card. You can add more details here to describe the content of the card.</p>
+                <a href="#" class="card-btn">Read More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+CSSS:-
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Card Section */
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+  background-color: #e67e22;
+}
+
+
+
+
+intro csss:-
+  .introduction {
+    background-image: url('background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333; /* Adjust text color as needed */
+    position: relative;
+    border-radius: 15px; /* Rounded corners for card shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    margin: 20px auto; /* Center the card and add margin */
+    max-width: 800px; /* Limit the width for a card-like appearance */
+    overflow: hidden; /* Ensure rounded corners work properly */
+}
+
+.introduction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50%; /* Adjust this value to control the overlay height */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with 80% opacity */
+    z-index: 1;
+    border-radius: 15px 15px 0 0; /* Match the top rounded corners */
+}
+
+.intro-content {
+    position: relative;
+    z-index: 2;
+}
+
+.intro-content h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 1.2rem; /* Adjust font size as needed */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+intro html:-
+<section class="introduction">
+        <div class="intro-content">
+            <h1>Welcome to LivingHub</h1>
+            <p>Your ultimate solution for apartment management. Simplify your living experience with our advanced tools and features.</p>
+        </div>
+
+
+    </section>

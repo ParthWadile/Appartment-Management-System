@@ -1,0 +1,30 @@
+\begin{figure}[tbph]
+	\centering
+	\includegraphics[width=0.9 \textwidth]{appform.png}
+	\caption{Add/Update Apartment Form}
+	\label{fig:f15}
+\end{figure}
+\begin{figure}[tbph]
+	\centering
+	\includegraphics[width=0.9 \textwidth]{p9.png}
+	\caption{Add/Update Resident Form}
+	\label{fig:f15}
+\end{figure}
+\begin{figure}[tbph]
+	\centering
+	\includegraphics[width=0.9 \textwidth]{p10.png}
+	\caption{Add Payment Form}
+	\label{fig:f15}
+\end{figure}
+\begin{figure}[tbph]
+	\centering
+	\includegraphics[width=0.9 \textwidth]{p11.png}
+	\caption{Add/Update Maintenance Request Form}
+	\label{fig:f15}
+\end{figure}
+\begin{figure}[tbph]
+	\centering
+	\includegraphics[width=0.9 \textwidth]{p12.png}
+	\caption{Submit/View Report Form}
+	\label{fig:f15}
+\end{figure}
